@@ -1,0 +1,40 @@
+<!-- Facebook SDK does not allow HTTP access only HTTPS, app needs a domain name with access to secure connection in order to work with facebook login SDK -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+		<title>Facebook Login</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-6 mx-auto">
+					<div class="mt-4">
+						<img src="./images/logo.png" class="img-fluid" alt="logo" />
+					</div>
+					<form action="" class="m-5">
+						<div class="fb-like mb-4" data-share="true" data-width="450" data-show-faces="true"></div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Email" />
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Password" />
+						</div>
+						<div class="form-group">
+							<button class="btn btn-success">Log In</button>
+							<button onclick="logIn()" class="btn btn-primary">Login With Facebook Here</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="./js/main.js"></script>
+		<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+	</body>
+</html>
